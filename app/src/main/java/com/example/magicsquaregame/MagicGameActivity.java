@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,13 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
-public class MagicGame extends AppCompatActivity {
+public class MagicGameActivity extends AppCompatActivity {
     private int level;
     private final int GRID_SIZE = 9;
     private boolean isWon = false;
@@ -37,7 +34,6 @@ public class MagicGame extends AppCompatActivity {
         setContentView(R.layout.activity_magic_game);
 
         level = getIntent().getIntExtra("level", 1);
-        Log.d("aa", "Level: " + level);
 
         initializeViews();
         generateRandomNumbers();

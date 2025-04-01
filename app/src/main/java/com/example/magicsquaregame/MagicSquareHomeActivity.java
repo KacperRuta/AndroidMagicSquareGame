@@ -68,7 +68,7 @@ public class MagicSquareHomeActivity extends AppCompatActivity {
 
                     int level = Integer.parseInt(levelText);
                     if (level >= 1 && level <= 9) {
-                        Intent gameIntent = new Intent(MagicSquareHomeActivity.this, MagicGame.class);
+                        Intent gameIntent = new Intent(MagicSquareHomeActivity.this, MagicGameActivity.class);
                         gameIntent.putExtra("level", level);
                         startActivity(gameIntent);
                     }

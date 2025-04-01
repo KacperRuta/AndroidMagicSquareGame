@@ -25,7 +25,7 @@
         </activity>
         <activity android:name=".MagicSquareHomeActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".MagicGame"
+        <activity android:name=".MagicGameActivity"
             android:screenOrientation="portrait"/>
     </application>
 
