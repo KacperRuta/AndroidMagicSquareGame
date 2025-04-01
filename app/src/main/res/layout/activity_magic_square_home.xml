@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true">  <!-- Ensures content starts below system bars -->
+
+    <TextView
+        android:id="@+id/textViewGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Choose game level"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
+        android:hint="Enter number from 1 - 9"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textStyle="bold"
+        />
+
+
+    <Button
+        android:id="@+id/buttonMagicSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MagicSquare"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textViewSuccessFail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        />
+</LinearLayout>
